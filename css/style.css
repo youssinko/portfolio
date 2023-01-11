@@ -8,13 +8,16 @@
 
 }
 body{
-    overflow: hidden;
+
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);;
 }
 .container{
     width: 100%;
     min-height: 100vh;
    
+}
+p{
+    font-size: 20px;
 }
 nav{
     display: flex;
@@ -84,17 +87,40 @@ position: absolute;
 h1{
     font-size: 80px;
 }
-img {
-    /* border-radius: 50%; */
-    height: 500px;
-    width:500px;
+.image {
 
+    height: 400%;
+    width:400%;
+    right: 200%;
+    top:200px;
+   
+
+    position:relative;
+
+
+    transform: rotateY(180deg);
+    filter: saturate(130%);
     animation: animateUser 4s linear infinite;
   }
   @keyframes animateUser{
     50%{
-        right: 30px;
-        top:-90px;
-
+      
+ 
+    }
+  }
+  .bgImage{
+    position: absolute;
+    top: 53%;
+    right: -7%;
+    transform: translate(-10%, -10%) rotate(-25deg);
+    width: 35%;
+    height: 30%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+  } 
+  @keyframes animate{
+   
+    50%{
+        width: 40%;
     }
   }
