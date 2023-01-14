@@ -9,17 +9,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <header class="header-area">
-      <div class="main" >
-    
-    
-
- 
+      <div class="main">
         <!-- <div class="links col-md-6 col-lg-4 col-xl-3">
           <a href="https://www.linkedin.com/in/youssinko/"
             ><i class="fab fa-linkedin"></i
@@ -31,7 +32,9 @@
     </div>
       </nav>  -->
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#"><img src="./images/RE.png" style="width: 40%"></a>
+          <a class="navbar-brand" href="#"
+            ><img src="./images/RE.png" style="width: 350px"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,7 +47,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-           
+            <div class="mr-auto"></div>
             <ul class="navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link" href="#"
@@ -57,44 +60,91 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
-            
             </ul>
           </div>
         </nav>
       </div>
     </header>
     <main class="site-main">
-        <section class="wrapper">
-            <div class="container">
-                <div class="row">
-                <div class="col-lg-6 col-lg-12 site-title">
-                    <span class="topline">Hello...</span>
-                    <h1>I'm <span class="multiText"></span> Developer</h1>
+      <div class="container">
+        <span class="topline">Hello...</span>
 
-                    <p>
-                      I am a motivated , self-starter who enjoys to be challenged and engaged
-                      in projects that require using my experience along with all technical
-                      skills for problem solving.I’ve recently graduated from Per-Scholas
-                      Bootcamp that provided me with all resources, knowledge and hands on
-                      projects to become a skilled software engineer. I had also developed
-                      other skills from my previous career in HealthCare that helped me to
-                      be able to prioritize and communicate efficiently with other
-                      departments to solve problems and review cases in a timely manner.
-                    </p>
-                    <div class="d-flex flex-row flex-wrap">
-                        <button type="button" class="btn button primary-button mr-4 text-uppercase">
-                            <a href="./images/general cv 2.pdf" download="general cv 2.pdf"
-                            style="color:rgba(239, 52, 142, 0.907);font-weight: bold;" >Download Resume</a
-                            >
-                          </button>
+        <h1>I'm <span class="multiText"></span> Developer</h1>
+      </div>
+      <section class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 site-title">
+              <!-- <span class="topline">Hello...</span>
+                    
+                    <h1>I'm <span class="multiText"></span> Developer </h1> -->
+
+              <p>
+                I am a motivated , self-starter who enjoys to be challenged and
+                engaged in projects that require using my experience along with
+                all technical skills for problem solving.I’ve recently graduated
+                from Per-Scholas Bootcamp that provided me with all resources,
+                knowledge and hands on projects to become a skilled software
+                engineer. I had also developed other skills from my previous
+                career in HealthCare that helped me to be able to prioritize and
+                communicate efficiently with other departments to solve problems
+                and review cases in a timely manner.
+              </p>
+              <div class="site-btn">
+                <div class="d-flex flex-row flex-wrap">
+                  <button
+                    type="button"
+                    class="btn button primary-button mr-4 text-uppercase"
+                  >
+                    <a
+                      href="./images/general cv 2.pdf"
+                      download="general cv 2.pdf"
+                      style="
+                        color: rgba(239, 52, 142, 0.907);
+                        font-weight: bold;
+                      "
+                      >Download Resume</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 banner-image">
+                <img class="bgImage" src="./images/pink.png" alt="" />
+              <img
+                src="./images/profile30.png"
+                alt="banner-img"
+                class="img-fluid image"
+              />
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="container">
+          <h2 class="text-uppercase title-h1">Recently Done Projects</h2>
+          <div class="button-group">
+            <button type="button" class="active">All</button>
+            <button type="button" class="active">Latest</button>
+          </div>
+          <div class="row grid">
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                <div class="our-project">
+                    <div class="img">
+                        <img src="./images/js.png" alt="" >
+                    </div>
+                    <div class="img">
+                        <img src="./images/react20.png" alt="" >
+                    </div>
+                    <div class="img">
+                        <img src="./images/mern3.png" alt="" >
                     </div>
                 </div>
-                <div class="col-lg-6 col-lg-12 banner-image">
-                    <img src="./images/profile30.png" alt="banner-img" class="img-fluid">
-                </div>
             </div>
+          </div>
         </div>
-        </section>
+      </section>
     </main>
     <!-- <div class="wrapper">
         <span class="topline">Hello</span>

@@ -199,15 +199,13 @@ h1{
 /* .header-area .main .navbar .navbar-brand{
   padding: 0 2rem 0 5rem;
  
-} */
-/* .header-area .main .navbar{
+} 
+.header-area .main .navbar{
  
   padding: 1rem 20rem;
 } */
  nav{
-background-color: rgb(170,170,161);
 font-size: 30px;
-
 
  }
  .nav-link{
@@ -260,3 +258,30 @@ p{
   opacity: 0.25;
 
 } */
+.banner-image{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+
+  
+}
+.image {
+  position:relative;
+} 
+
+.bgImage{
+  position: absolute;
+  top: 45%;
+  right: -5%;
+  transform: translate(-10%, -10%) rotate(-25deg);
+  width: 100%;
+  height: 30%;
+
+  animation: animate 4s linear infinite;
+} 
+@keyframes animate{
+ 
+  50%{
+      width: 134%;
+  }
+}
