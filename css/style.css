@@ -1,209 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap'); */
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
-   
 
-}
-body{
-
-    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);;
-}
-.container{
-    width: 100%;
-    min-height: 100vh;
-   
-}
-p{
-    font-size: 20px;
-}
-.navbar{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    height: 80px;
-}
-.nav-item{
-  
-    display: flex;
-    font-size: 30px;
-    justify-content:space-evenly;
-    margin: 20px;
-    
-}
-
-.nav-item li a{
-    font-size: 25px;
-    letter-spacing:3px;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-.links a{
-    font-size: 40px;
-    color: coral;
-    margin: 25px 10px;
-}
-
-a:link { text-decoration: none; }
-
-
-a:visited { text-decoration: none; }
-
-
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
-button{
- background-color: #a8eb12;
- font-size: 20px;
- color: darkblue;
-cursor:pointer;
-padding: 7px;
-box-shadow:0 15px 10px  #051937;
-margin-top: 15px;
-
-
-}
-.btns :hover{
-background-color: coral;
-text-decoration: none;
-}
-
-.wrapper{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10%;
-
-}
-.topline{
-    display: block;
-    position: relative;
-    font-size: 35px;
-    letter-spacing: 5px;
-    color: #a8eb12;
-}
-
-.multiText{
-    color:coral;
-    text-transform: capitalize;
-    
-}
-h1{
-    font-size: 80px;
-}
-.image {
-
-    height: 400%;
-    width:400%;
-    right: 200%;
-    top:200px;
-   
-
-    position:relative;
-
-
-    transform: rotateY(180deg);
-    filter: saturate(130%);
-    animation: animateUser 4s linear infinite;
-  }
-  @keyframes animateUser{
-    50%{
-      
- 
-    }
-  }
-  .bgImage{
-    position: absolute;
-    top: 53%;
-    right: -7%;
-    transform: translate(-10%, -10%) rotate(-25deg);
-    width: 35%;
-    height: 30%;
-    filter: saturate(200%);
-    animation: animate 4s linear infinite;
-  } 
-  @keyframes animate{
-   
-    50%{
-        width: 40%;
-    }
-  }
-  .wrapper1{
-    margin: 90px;
-    width: 400px;
-    height: 400px;
-
-  }
-  .wrapper1 img{
-    width: 250px;
-    height: 250px;
-  }
-  .outerCircle{
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 50%;
-    position: relative;
-    background-color: white;
-  }
-  .circleBorder{
-    position: absolute;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    border: 10px solid; color: coral;
-    top: 50%;
-    left: 50%;
-    margin: -125px 0px 0px -125px;
-  }
-  .infoCircle{
-    position: absolute;
-    background:rgba(102,153, 153, 0.96);
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    transition: all 0.5s ease-in-out;
-    top: 50px;
-    left: -250px;
-    margin: -100px 0px 0px -100px;
-    text-align:center;
-
-
-  }
-  .infoCircle h2{
-   
-    position: absolute;
-    top:30px
-
-  }
-  .infoCircle button{
-    position: absolute;
-    top:120px;
-    left:35px
-
-  }
-  .outerCircle :hover .infoCircle{
-    transition: all 0.5s ease-in-out;
-    left: 50%;
-  top: 50%;
-  } */
- 
-  
-/* .header-area .main .navbar .navbar-brand{
-  padding: 0 2rem 0 5rem;
- 
-} 
-.header-area .main .navbar{
- 
-  padding: 1rem 20rem;
-} */
  nav{
 font-size: 30px;
 
@@ -329,15 +124,53 @@ p{
 .infoCircle button{
   position: absolute;
   top:145px;
-  left:43px
+  left:47px
 
 }
 .outerCircle :hover .infoCircle{
   transition: all 0.5s ease-in-out;
   left: 50%;
 top: 50%;
+cursor:pointer;
 }
 .title-h1{
   text-align: center;
   letter-spacing: 12px;
+}
+button:hover{
+  background-color:rgb(247,226,74)
+  
+}
+a{
+  text-decoration: none;
+  color: pink;
+}
+a:hover{
+  color:rgb(247,226,74) ;
+  text-decoration: none;
+}
+.btn:hover{
+  background-color: rgb(247,226,74);
+  color: black;
+}
+
+.blink{
+  animation: blink 10s infinite;
+}
+@keyframes blink{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+    transform: scale(2);
+  }
+  51%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
