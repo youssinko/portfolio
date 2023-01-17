@@ -18,13 +18,13 @@
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
   
-                // these IDs from the previous steps
                 emailjs.sendForm('service_qyejor8', 'template_gux7f0i', this)
                     .then(function() {
                         console.log('SUCCESS!');
                         alert("Email Sent Successfully");
                     }, function(error) {
                         console.log('FAILED...', error);
+                        alert("Error Occur");
                     });
             });
         }
@@ -48,59 +48,6 @@
           </div>
           <a href="../index.html" style="text-decoration: none;color:  rgb(247,226,74);font-size: 20px; display: flex;justify-content: center;"> Back to Home Page</a>
        
-    <!-- <script>
-        function sendemail() {
-          var userid = "nqs82aFC9vWTnjJv7"
-          emailjs.init(userid);
-          var thename = document.getElementById('thename').value;
-          var themail = document.getElementById('themail').value;
-          var themsg = document.getElementById('themsg').value;
-          var validmail = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-          if (thename == "") {
-            alert("Please Enter Name");
-          }
-          else if (themail == "" || themail.match(!validmail)) {
-            alert("Please Enter Valid Email");
-          }
     
-          else if (themsg == "") {
-            alert("Please Enter Message");
-          }
-          else {
-            var contactdetail = {
-              from_name: thename,
-              from_email: themail,
-              message: themsg
-            };
-    
-            emailjs.send('service_qyejor8', 'template_gux7f0i', contactdetail).then(function (res) {
-              alert("Email Sent Successfully");
-            },
-              reason => {
-                alert("Error Occur");
-              })
-          }
-        }
-      </script>
-</head>
-<body style="background-color:  rgb(170,170,161);">
-    <div class="container">
-        <div class="card col-md-6 offset-md-3" style="margin-top:50px;">
-          <div class="card-body" style="background-color: pink;">
-            <h2 style="text-align: center;color:hotpink;">Contact Me</h2>
-            <form id="contact-form">
-            <label for="thename">Name</label>
-            <input type="text" class="form-control" id="thename" placeholder="Enter Name">
-            <label for="themail">Email:</label>
-            <input type="email" class="form-control" id="themail" placeholder="Enter Email">
-            <label for="themsg">Message</label>
-            <textarea class="form-control" id="themsg" placeholder="Enter Message or Link for Job opportunities"></textarea>
-            <button class="btn btn-danger btn-sm" style="margin-top:10px;" onCLick="sendemail();">Send</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <a href="../index.html" style="text-decoration: none;color:  rgb(247,226,74);font-size: 20px; display: flex;justify-content: center;"> Back to Home Page</a>
-   -->
 </body>
 </html>
