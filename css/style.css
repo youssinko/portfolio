@@ -158,6 +158,7 @@ a:hover{
   color:rgb(247,226,74) ;
   text-decoration: none;
 }
+
 .btn:hover{
   background-color: rgb(247,226,74);
   color: black;
@@ -182,4 +183,11 @@ a:hover{
     opacity: 1;
     transform: scale(1);
   }
+}
+li{
+margin-right: 35px;
+}
+label{
+  color: black;
+  font-weight: bold;
 }
