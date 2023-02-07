@@ -10,7 +10,7 @@ font-size: 30px;
 
  body{
   /* background-color: rgb(170,170,161); */
-  background:fixed linear-gradient(to top,  rgba(102,153, 153, 0.96) 0% , rgb(26, 26, 25) 100% );
+  background:fixed linear-gradient(to top,  rgba(102,153, 153, 0.96) 0% , #1a1a19 100% );
   color: white;
   
  }
